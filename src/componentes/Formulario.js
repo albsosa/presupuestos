@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import PropTypes from 'prop-types';
 class FormularioGasto extends Component{
     //refs para los campos del formulario
     nombreGasto = React.createRef();
@@ -38,5 +38,9 @@ class FormularioGasto extends Component{
             </form>
         )
     }
+}
+
+FormularioGasto.PropTypes = {
+    agregarGasto: PropTypes.func.isRequired
 }
 export default FormularioGasto;
